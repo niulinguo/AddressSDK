@@ -8,8 +8,8 @@ android {
     defaultConfig {
         minSdkVersion 14
         targetSdkVersion 28
-        versionCode 1
-        versionName "1.0"
+        versionCode Integer.parseInt(VERSION_CODE)
+        versionName VERSION_NAME
 
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
 
@@ -32,6 +32,6 @@ dependencies {
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
 
-    implementation 'com.github.niulinguo:InstancePoolSDK:v1.1'
-    implementation 'com.github.niulinguo:SeparateSDK:v1.1'
+    implementation 'com.github.niulinguo:InstancePoolSDK:1.2'
+    implementation 'com.github.niulinguo:SeparateSDK:1.2'
 }

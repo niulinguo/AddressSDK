@@ -17,7 +17,7 @@ public class AddressManager {
         return mProvinceBeanList;
     }
 
-    public void setProvinceBeanList(List<ProvinceBean> provinceBeanList) {
+    void setProvinceBeanList(List<ProvinceBean> provinceBeanList) {
         mProvinceBeanList = provinceBeanList;
     }
 

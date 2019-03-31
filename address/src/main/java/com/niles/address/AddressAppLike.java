@@ -118,11 +118,11 @@ public class AddressAppLike extends AbsApplicationLike {
     }
 
     private AddressManager initAddressData() {
-        AssetManager assetManager = getApplication().getAssets();
         InputStream inputStream = null;
         ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
         //noinspection TryFinallyCanBeTryWithResources
         try {
+            AssetManager assetManager = getApplication().getAssets();
             inputStream = assetManager.open("pac.json");
             byte[] buffer = new byte[1024];
             int length;
